@@ -12,6 +12,8 @@ public class Dialogue : MonoBehaviour
     [SerializeField] private bool isCutscene;
     public Player player;
 
+    public InteractableObject interactableObject;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -63,6 +65,10 @@ public class Dialogue : MonoBehaviour
             else
             {
                 player.canMove = true;
+                if (interactableObject != null)
+                {
+                    interactableObject.interactable = true;
+                }
                 Destroy(gameObject);
             }
         }
