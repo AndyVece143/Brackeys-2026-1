@@ -108,7 +108,7 @@ MonoBehaviour:
   player: {fileID: 0}
   dialogueLines:
   - That's a big window. Seems like the lights are on inside.
-  - It's quite late... wonder what they're doing inside.
+  - I wish I could peak in and see what they are doing inside.
   dialogue: {fileID: 6290841373176700775, guid: 2d26a26c073c6fc4c943f481d3bc951a, type: 3}
   dialogueSpeed: 0.05
   interactable: 0
@@ -268,8 +268,7 @@ MonoBehaviour:
   player: {fileID: 0}
   dialogueLines:
   - Looks like a drug store. Seems to be closed for the day/
-  - A drug store located in a sketchy alleyway like this probably doesn't lead to
-    great sales.
+  - That reminds me, I need to refill my prilosec.
   dialogue: {fileID: 6290841373176700775, guid: 2d26a26c073c6fc4c943f481d3bc951a, type: 3}
   dialogueSpeed: 0.05
   interactable: 0
@@ -555,7 +554,7 @@ MonoBehaviour:
   player: {fileID: 0}
   dialogueLines:
   - A standard garbage can. Nothing unusual about it.
-  - It appears to be half full. Or half empty, if you're that kind of person.
+  - It appears to be half empty. Or half full, if you're that kind of person.
   dialogue: {fileID: 6290841373176700775, guid: 2d26a26c073c6fc4c943f481d3bc951a, type: 3}
   dialogueSpeed: 0.05
   interactable: 0
@@ -966,7 +965,7 @@ MonoBehaviour:
   player: {fileID: 0}
   dialogueLines:
   - Just a trash bag. Nothing out of the ordinary about that.
-  - I wonder why it's out here instead of being put in a bin.
+  - ...I need to take out my trash.
   dialogue: {fileID: 6290841373176700775, guid: 2d26a26c073c6fc4c943f481d3bc951a, type: 3}
   dialogueSpeed: 0.05
   interactable: 0
@@ -1171,7 +1170,7 @@ MonoBehaviour:
   player: {fileID: 0}
   dialogueLines:
   - Graffiti. I always look forward to seeing these around the city.
-  - ...wonder what a 'Brackeys' is.
+  - Brackeys is such a fun word to say.
   dialogue: {fileID: 6290841373176700775, guid: 2d26a26c073c6fc4c943f481d3bc951a, type: 3}
   dialogueSpeed: 0.05
   interactable: 0
@@ -1643,7 +1642,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4714246184872875730}
   m_Layer: 0
-  m_Name: Screen1
+  m_Name: Screen2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1674,6 +1673,7 @@ Transform:
   - {fileID: 8087099273317948218}
   - {fileID: 4313474839187107658}
   - {fileID: 6407437676064482569}
+  - {fileID: 5050337052950900575}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &5535217968574370413
@@ -1694,7 +1694,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1457690683819898724, guid: d4b7bceea2416ae48b3f670d2b767567, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.28
+      value: -8.7
       objectReference: {fileID: 0}
     - target: {fileID: 1457690683819898724, guid: d4b7bceea2416ae48b3f670d2b767567, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1734,27 +1734,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5779099381838723715, guid: d4b7bceea2416ae48b3f670d2b767567, type: 3}
       propertyPath: sceneName
-      value: Coward
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5779099381838723715, guid: d4b7bceea2416ae48b3f670d2b767567, type: 3}
       propertyPath: playerReact
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5779099381838723715, guid: d4b7bceea2416ae48b3f670d2b767567, type: 3}
       propertyPath: dialogueSpeed
       value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 5779099381838723715, guid: d4b7bceea2416ae48b3f670d2b767567, type: 3}
+      propertyPath: retriggerable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5779099381838723715, guid: d4b7bceea2416ae48b3f670d2b767567, type: 3}
       propertyPath: sceneTransition
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5779099381838723715, guid: d4b7bceea2416ae48b3f670d2b767567, type: 3}
       propertyPath: dialogueLines.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5779099381838723715, guid: d4b7bceea2416ae48b3f670d2b767567, type: 3}
       propertyPath: 'dialogueLines.Array.data[0]'
-      value: Nah, screw this shady alleyway. I'm gonna find a different way home.
+      value: Hm? What is this feeling?
+      objectReference: {fileID: 0}
+    - target: {fileID: 5779099381838723715, guid: d4b7bceea2416ae48b3f670d2b767567, type: 3}
+      propertyPath: 'dialogueLines.Array.data[1]'
+      value: I can't... go back.
       objectReference: {fileID: 0}
     - target: {fileID: 8506313314646402879, guid: d4b7bceea2416ae48b3f670d2b767567, type: 3}
       propertyPath: m_Name
@@ -1763,10 +1771,150 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8506313314646402879, guid: d4b7bceea2416ae48b3f670d2b767567, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8003573553523600749}
   m_SourcePrefab: {fileID: 100100000, guid: d4b7bceea2416ae48b3f670d2b767567, type: 3}
+--- !u!1 &4241675678016124242 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8506313314646402879, guid: d4b7bceea2416ae48b3f670d2b767567, type: 3}
+  m_PrefabInstance: {fileID: 5535217968574370413}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &8003573553523600749
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4241675678016124242}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!4 &6407437676064482569 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1457690683819898724, guid: d4b7bceea2416ae48b3f670d2b767567, type: 3}
   m_PrefabInstance: {fileID: 5535217968574370413}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5921291497438353467
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4714246184872875730}
+    m_Modifications:
+    - target: {fileID: 1457690683819898724, guid: d4b7bceea2416ae48b3f670d2b767567, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 5.548564
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457690683819898724, guid: d4b7bceea2416ae48b3f670d2b767567, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457690683819898724, guid: d4b7bceea2416ae48b3f670d2b767567, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.1359
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457690683819898724, guid: d4b7bceea2416ae48b3f670d2b767567, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457690683819898724, guid: d4b7bceea2416ae48b3f670d2b767567, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457690683819898724, guid: d4b7bceea2416ae48b3f670d2b767567, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457690683819898724, guid: d4b7bceea2416ae48b3f670d2b767567, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457690683819898724, guid: d4b7bceea2416ae48b3f670d2b767567, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457690683819898724, guid: d4b7bceea2416ae48b3f670d2b767567, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457690683819898724, guid: d4b7bceea2416ae48b3f670d2b767567, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457690683819898724, guid: d4b7bceea2416ae48b3f670d2b767567, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5779099381838723715, guid: d4b7bceea2416ae48b3f670d2b767567, type: 3}
+      propertyPath: playerReact
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5779099381838723715, guid: d4b7bceea2416ae48b3f670d2b767567, type: 3}
+      propertyPath: dialogueSpeed
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5779099381838723715, guid: d4b7bceea2416ae48b3f670d2b767567, type: 3}
+      propertyPath: dialogueLines.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5779099381838723715, guid: d4b7bceea2416ae48b3f670d2b767567, type: 3}
+      propertyPath: 'dialogueLines.Array.data[0]'
+      value: Huh? This is the same alleyway, right?
+      objectReference: {fileID: 0}
+    - target: {fileID: 5779099381838723715, guid: d4b7bceea2416ae48b3f670d2b767567, type: 3}
+      propertyPath: 'dialogueLines.Array.data[1]'
+      value: Am I in a loop?
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506313314646402879, guid: d4b7bceea2416ae48b3f670d2b767567, type: 3}
+      propertyPath: m_Name
+      value: DialogueTrigger (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d4b7bceea2416ae48b3f670d2b767567, type: 3}
+--- !u!4 &5050337052950900575 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1457690683819898724, guid: d4b7bceea2416ae48b3f670d2b767567, type: 3}
+  m_PrefabInstance: {fileID: 5921291497438353467}
   m_PrefabAsset: {fileID: 0}

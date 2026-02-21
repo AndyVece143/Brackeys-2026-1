@@ -21,7 +21,7 @@ public class CameraController : MonoBehaviour
                 Mathf.Clamp(targetPos.y, minPos.y, maxPos.y),
                 Mathf.Clamp(targetPos.z, minPos.z, maxPos.z));
 
-            newPos = Vector3.Lerp(transform.position, camBoundaryPos, speed);
+            newPos = Vector3.Lerp(transform.position, camBoundaryPos, speed * Time.deltaTime);
             transform.position = newPos;
         }
     }

@@ -20,6 +20,7 @@ public class CameraTrigger : MonoBehaviour
             cameraControl.maxPos += newCamPos;
 
             collision.transform.position += newPlayerPos;
+            collision.GetComponent<Player>().ScreenTransition();
         }
     }
 }

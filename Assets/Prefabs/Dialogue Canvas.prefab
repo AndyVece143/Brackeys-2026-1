@@ -339,3 +339,5 @@ MonoBehaviour:
   isCutscene: 0
   player: {fileID: 0}
   interactableObject: {fileID: 0}
+  sceneName: 
+  loader: {fileID: 0}

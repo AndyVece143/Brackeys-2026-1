@@ -9,6 +9,9 @@ public class DialogueTrigger : MonoBehaviour
     public Dialogue dialogue;
     public Player player;
     public float dialogueSpeed;
+    public int playerReact;
+    public string sceneName;
+    public bool sceneTransition;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -32,10 +35,15 @@ public class DialogueTrigger : MonoBehaviour
         }
 
         player.canMove = false;
-        player.StopMoving();
+        player.StopMoving(playerReact);
         Dialogue newDialogue = Instantiate(dialogue);
         newDialogue.lines = dialogueLines;
         newDialogue.textSpeed = dialogueSpeed;
+        if (sceneTransition == true)
+        {
+            newDialogue.sceneTransition = true;
+            newDialogue.sceneName = sceneName;
+        }
         triggered = true;
     }
 }

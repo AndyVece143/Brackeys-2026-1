@@ -4,33 +4,41 @@ public class InteractableObject : MonoBehaviour
 {
     public Player player;
     public string[] dialogueLines;
-    private float distance;
     public Dialogue dialogue;
     public float dialogueSpeed;
     public bool interactable;
+    public BoxCollider2D boxCollider;
+    public int playerReact;
+    public bool interacted;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         player = Player.FindAnyObjectByType<Player>();
+        boxCollider = GetComponent<BoxCollider2D>();
         interactable = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        distance = Vector3.Distance(player.transform.position, transform.position);
-        if (distance <= 1)
+        if (boxCollider.IsTouching(player.boxCollider))
         {
             if (Input.GetMouseButtonDown(0) && interactable == true)
             {
                 interactable = false;
                 player.canMove = false;
-                player.StopMoving();
+                player.StopMoving(playerReact);
+                if (interacted == false)
+                {
+                    player.checker++;
+                }
+                interacted = true;
                 Dialogue newDialogue = Instantiate(dialogue);
                 newDialogue.lines = dialogueLines;
                 newDialogue.textSpeed = dialogueSpeed;
                 newDialogue.interactableObject = this;
+
             }
         }
     }

@@ -14,6 +14,11 @@ public class Dialogue : MonoBehaviour
 
     public InteractableObject interactableObject;
 
+    public bool sceneTransition;
+    public string sceneName;
+    public LevelLoader loader;
+    public EndingText endingText;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -22,6 +27,7 @@ public class Dialogue : MonoBehaviour
             player = Player.FindAnyObjectByType<Player>();
         }
         textComponent.text = string.Empty;
+        loader = LevelLoader.FindAnyObjectByType<LevelLoader>();
         StartDialogue();
     }
 
@@ -60,7 +66,8 @@ public class Dialogue : MonoBehaviour
         {
             if (isCutscene)
             {
-                //loader.LoadNextLevel(sceneName);
+                endingText.begin = true;
+                Destroy(gameObject);
             }
             else
             {
@@ -68,6 +75,11 @@ public class Dialogue : MonoBehaviour
                 if (interactableObject != null)
                 {
                     interactableObject.interactable = true;
+                }
+
+                if (sceneTransition == true)
+                {
+                    loader.LoadNextLevel(sceneName);
                 }
                 Destroy(gameObject);
             }
