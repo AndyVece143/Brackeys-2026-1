@@ -115,6 +115,8 @@ MonoBehaviour:
   boxCollider: {fileID: 4030548802720040204}
   playerReact: 3
   interacted: 0
+  key: 0
+  creepy: 0
 --- !u!61 &4030548802720040204
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -268,7 +270,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::InteractableObject
   player: {fileID: 0}
   dialogueLines:
-  - Looks like a drug store. Seems to be closed for the day/
+  - Looks like a drug store. Seems to be closed for the day.
   - I wonder how the prices here compare to my pharmacy.
   dialogue: {fileID: 6290841373176700775, guid: 2d26a26c073c6fc4c943f481d3bc951a, type: 3}
   dialogueSpeed: 0.05
@@ -276,6 +278,8 @@ MonoBehaviour:
   boxCollider: {fileID: 9124309133192090649}
   playerReact: 3
   interacted: 0
+  key: 0
+  creepy: 0
 --- !u!61 &9124309133192090649
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -563,6 +567,8 @@ MonoBehaviour:
   boxCollider: {fileID: 0}
   playerReact: 3
   interacted: 0
+  key: 0
+  creepy: 0
 --- !u!61 &8679184135767574572
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -816,6 +822,8 @@ MonoBehaviour:
   boxCollider: {fileID: 1411335837217398472}
   playerReact: 2
   interacted: 0
+  key: 0
+  creepy: 0
 --- !u!1 &4338499872088909674
 GameObject:
   m_ObjectHideFlags: 0
@@ -1022,6 +1030,8 @@ MonoBehaviour:
   boxCollider: {fileID: 0}
   playerReact: 3
   interacted: 0
+  key: 0
+  creepy: 0
 --- !u!61 &4045454894666718647
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1229,6 +1239,8 @@ MonoBehaviour:
   boxCollider: {fileID: 6450865501606658452}
   playerReact: 3
   interacted: 0
+  key: 0
+  creepy: 0
 --- !u!1 &6814605187958261033
 GameObject:
   m_ObjectHideFlags: 0
@@ -1480,6 +1492,8 @@ MonoBehaviour:
   boxCollider: {fileID: 0}
   playerReact: 3
   interacted: 0
+  key: 0
+  creepy: 0
 --- !u!1 &9190727690851179874
 GameObject:
   m_ObjectHideFlags: 0

@@ -72,8 +72,8 @@ MonoBehaviour:
     We should
     talk to each other more.'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e8ad8caf8544bf243b4979f2e2ff743d, type: 2}
+  m_sharedMaterial: {fileID: 4076516536765697882, guid: e8ad8caf8544bf243b4979f2e2ff743d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -339,5 +339,9 @@ MonoBehaviour:
   isCutscene: 0
   player: {fileID: 0}
   interactableObject: {fileID: 0}
+  sceneTransition: 0
   sceneName: 
   loader: {fileID: 0}
+  endingText: {fileID: 0}
+  soundFX: {fileID: 8300000, guid: b4e9be9bf63df0343ab0906e8da2719d, type: 3}
+  opening: 0

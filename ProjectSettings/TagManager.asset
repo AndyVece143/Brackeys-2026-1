@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 3
   tags:
   - Interact
+  - Creepy
+  - Nothing
+  - Music
   layers:
   - Default
   - TransparentFX

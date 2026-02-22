@@ -19,6 +19,9 @@ public class Dialogue : MonoBehaviour
     public LevelLoader loader;
     public EndingText endingText;
 
+    public AudioClip soundFX;
+    public bool opening;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -50,6 +53,10 @@ public class Dialogue : MonoBehaviour
 
     void StartDialogue()
     {
+        if (!isCutscene)
+        {
+            SoundManager.instance.PlaySound(soundFX);
+        }
         index = 0;
         StartCoroutine(TypeLine());
     }
@@ -64,24 +71,31 @@ public class Dialogue : MonoBehaviour
         }
         else
         {
-            if (isCutscene)
+            if (isCutscene && !opening)
             {
                 endingText.begin = true;
                 Destroy(gameObject);
             }
             else
             {
-                player.canMove = true;
+                
                 if (interactableObject != null)
                 {
                     interactableObject.interactable = true;
+                    Destroy(gameObject);
                 }
 
                 if (sceneTransition == true)
                 {
                     loader.LoadNextLevel(sceneName);
+                    Destroy(gameObject);
                 }
-                Destroy(gameObject);
+                else
+                {
+                    player.canMove = true;
+                    Destroy(gameObject);
+                }
+
             }
         }
     }

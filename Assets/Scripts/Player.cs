@@ -14,6 +14,11 @@ public class Player : MonoBehaviour
 
     public int checker;
 
+    public bool creepyGuy = false;
+    public bool keyGet = false;
+
+    public GameManager manager;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -64,6 +69,11 @@ public class Player : MonoBehaviour
         if (collision.gameObject.tag == "Interact")
         {
             textIndicator.enabled = true;
+        }
+
+        if (collision.gameObject.tag == "Nothing" && checker == 0)
+        {
+            manager.NothingEnding();
         }
     }
 

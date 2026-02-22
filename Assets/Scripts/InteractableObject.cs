@@ -10,7 +10,8 @@ public class InteractableObject : MonoBehaviour
     public BoxCollider2D boxCollider;
     public int playerReact;
     public bool interacted;
-
+    public bool key;
+    public bool creepy;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -33,6 +34,9 @@ public class InteractableObject : MonoBehaviour
                 {
                     player.checker++;
                 }
+                PlayerChecks();
+
+
                 interacted = true;
                 Dialogue newDialogue = Instantiate(dialogue);
                 newDialogue.lines = dialogueLines;
@@ -40,6 +44,19 @@ public class InteractableObject : MonoBehaviour
                 newDialogue.interactableObject = this;
 
             }
+        }
+    }
+
+    void PlayerChecks()
+    {
+        if (key == true)
+        {
+            player.keyGet = true;
+        }
+
+        if (creepy == true)
+        {
+            player.creepyGuy = true;
         }
     }
 }

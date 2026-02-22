@@ -13,12 +13,20 @@ public class DialogueTrigger : MonoBehaviour
     public string sceneName;
     public bool sceneTransition;
 
+    public bool musicCutter;
+    public AudioSource source;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         player = Player.FindAnyObjectByType<Player>();
         boxCollider = GetComponent<BoxCollider2D>();
         triggered = false;
+
+        if (musicCutter == true)
+        {
+            source = GameObject.FindWithTag("Music").GetComponent<AudioSource>();
+        }
     }
 
     // Update is called once per frame
@@ -32,6 +40,11 @@ public class DialogueTrigger : MonoBehaviour
         if (!retriggerable && triggered)
         {
             return;
+        }
+
+        if (musicCutter)
+        {
+            source.Pause();
         }
 
         player.canMove = false;
