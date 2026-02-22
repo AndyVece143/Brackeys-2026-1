@@ -1750,17 +1750,16 @@ MonoBehaviour:
   player: {fileID: 0}
   dialogueLines:
   - There's a note attached to the garbage can.
-  - '"Hey! Friendly creature here. If you''re reading this, you''re close to the
-    end."'
-  - '"Now, your fate is essentially locked in already, but I''ll tell you what you
-    could''ve done differently."'
-  - '"You could''ve just left immediately. No shame in that."'
-  - '"You could''ve also just ignored everything. That''s probably smart."'
-  - '"Oh, did you find that key in the car trunk?"'
-  - '"If you''re feeling daring, look at the guy in the window."'
-  - '"That should be all the advice I have! Oh wait, I have something very important
-    to tell you."'
-  - '"Don''t forget to - whoops, I am running out of pap-"'
+  - Hey! Friendly creature here. If you're reading this, you're close to the end.
+  - Now, your fate is essentially locked in already, but I'll tell you what you could've
+    done differently.
+  - You could've just left immediately. No shame in that.
+  - You could've also just ignored everything. That's probably smart.
+  - Oh, did you find that key in the car trunk?
+  - If you're feeling daring, look at the guy in the window.
+  - That should be all the advice I have! Oh wait, I have something very important
+    to tell you.
+  - Don't forget to - whoops, I am running out of pap-
   dialogue: {fileID: 6290841373176700775, guid: 2d26a26c073c6fc4c943f481d3bc951a, type: 3}
   dialogueSpeed: 0.05
   interactable: 0
