@@ -1442,7 +1442,7 @@ MonoBehaviour:
   dialogueLines:
   - Y-You're next?!
   - Is it referring to me? It has to be!
-  dialogue: {fileID: 0}
+  dialogue: {fileID: 6290841373176700775, guid: 2d26a26c073c6fc4c943f481d3bc951a, type: 3}
   dialogueSpeed: 0.1
   interactable: 0
   boxCollider: {fileID: 0}
