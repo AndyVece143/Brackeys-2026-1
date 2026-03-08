@@ -539,10 +539,10 @@ MonoBehaviour:
       m_Calls: []
   m_text: '- WASD/Arrow Keys: Move
 
-    - Left Click: Inspect and Talk
+    - Left Click/Space: Inspect and Talk
 
-    - P:
-    Pause'
+    -
+    P: Pause'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e8ad8caf8544bf243b4979f2e2ff743d, type: 2}
   m_sharedMaterial: {fileID: 4076516536765697882, guid: e8ad8caf8544bf243b4979f2e2ff743d, type: 2}

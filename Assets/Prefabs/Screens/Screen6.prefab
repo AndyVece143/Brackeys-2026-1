@@ -823,7 +823,7 @@ MonoBehaviour:
   playerReact: 2
   interacted: 0
   key: 0
-  creepy: 1
+  creepy: 0
 --- !u!1 &3952922851664677216
 GameObject:
   m_ObjectHideFlags: 0

@@ -25,24 +25,26 @@ public class InteractableObject : MonoBehaviour
     {
         if (boxCollider.IsTouching(player.boxCollider))
         {
-            if (Input.GetMouseButtonDown(0) && interactable == true)
+            if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space))
             {
-                interactable = false;
-                player.canMove = false;
-                player.StopMoving(playerReact);
-                if (interacted == false)
+                if (interactable == true)
                 {
-                    player.checker++;
+                    interactable = false;
+                    player.canMove = false;
+                    player.StopMoving(playerReact);
+                    if (interacted == false)
+                    {
+                        player.checker++;
+                    }
+                    PlayerChecks();
+
+
+                    interacted = true;
+                    Dialogue newDialogue = Instantiate(dialogue);
+                    newDialogue.lines = dialogueLines;
+                    newDialogue.textSpeed = dialogueSpeed;
+                    newDialogue.interactableObject = this;
                 }
-                PlayerChecks();
-
-
-                interacted = true;
-                Dialogue newDialogue = Instantiate(dialogue);
-                newDialogue.lines = dialogueLines;
-                newDialogue.textSpeed = dialogueSpeed;
-                newDialogue.interactableObject = this;
-
             }
         }
     }

@@ -1232,7 +1232,7 @@ MonoBehaviour:
   player: {fileID: 0}
   dialogueLines:
   - 'A wanted poster. Seems like the police put out a bounty on someone. '
-  - $10,000? I could buy like 2 sticks of RAM with that.
+  - 10,000 dollars? I could buy like 2 sticks of RAM with that.
   dialogue: {fileID: 6290841373176700775, guid: 2d26a26c073c6fc4c943f481d3bc951a, type: 3}
   dialogueSpeed: 0.05
   interactable: 0
