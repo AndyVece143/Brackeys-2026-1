@@ -27,6 +27,8 @@ public class Player : MonoBehaviour
         anim.GetComponent<Animator>();
         canMove = true;
         textIndicator.enabled = false;
+        creepyGuy = false;
+        keyGet = false;
     }
 
     // Update is called once per frame

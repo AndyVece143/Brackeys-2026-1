@@ -272,7 +272,7 @@ MonoBehaviour:
   player: {fileID: 0}
   dialogueLines:
   - Looks like a drug store. Seems to be closed for the day.
-  - It would be amusing ifthe stock changes each time I loop through the alley.
+  - It would be amusing if the stock changes each time I loop through the alley.
   dialogue: {fileID: 6290841373176700775, guid: 2d26a26c073c6fc4c943f481d3bc951a, type: 3}
   dialogueSpeed: 0.05
   interactable: 0

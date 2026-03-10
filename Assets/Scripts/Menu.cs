@@ -23,4 +23,9 @@ public class Menu : MonoBehaviour
     {
         loader.LoadNextLevel("Title");
     }
+
+    public void GameButton()
+    {
+        loader.LoadNextLevel("Game");
+    }
 }
