@@ -25,9 +25,12 @@ public class EndingText : MonoBehaviour
             StartCoroutine(waiter());
         }
 
-        if (clickable == true && Input.GetMouseButtonDown(0))
+        if (clickable == true)
         {
-            loader.LoadNextLevel(sceneName);
+            if (Input.GetMouseButtonUp(0) || Input.GetKeyDown(KeyCode.Space))
+            {
+                loader.LoadNextLevel(sceneName);
+            }
         }
     }
 
